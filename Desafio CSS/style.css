@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: black;
+}
+
+.geral {
+    width: 400px;
+    height: 200px;
+    /* O border-box abaixo força o cartao a ter a medida acima*/
+    box-sizing: border-box;
+    background: url(./Imagens/background.png) no-repeat;
+    background-size: cover;
+    margin: 5% 35%;
+    font-size: 20px;
+}
+
+.container {
+    padding: 15px;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-position: inside;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+}
+
+#instagram {
+    list-style-image: url(./Imagens/Insta.png);
+}
+
+#twitter {
+    list-style-image: url(./Imagens/Twitter.png);
+}
+#youtube {
+    list-style-image: url(./Imagens/Youtube.png);
+}
