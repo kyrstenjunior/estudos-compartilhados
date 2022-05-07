@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +8,49 @@
     <title>13 Slaca</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <link href='https://fonts.googleapis.com/css2?family=Roboto&display=swap' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css2?family=Quicksand&display=swap' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-    <header>
-        <section class="head-side">
+    <section class="side-bar">
+        <header class="sideHeader">
             <h2 class="text-hs">SLACA 2019</h2>
-        </section>
-        <section class="head-content">
+        </header>
+        <img class="imgSide" src="./img/image-sidebar.png" alt="image-sidebar">
+        <ul class="menuSide">
+            <li><a href="#">Apresentação</a></li>
+            <li><a href="#">Comitês</a></li>
+            <li><a href="#">Autores</a></li>
+            <li><a href="#">Eixos temáticos</a></li>
+            <li id="menuSelect"><a href="#">Trabalhos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </section>
+    <section class="content-center">
+        <header>
             <div class="text-header">
                 <p class="hline-1">Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
                 <p class="hline-2">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</p>
                 <p class="hline-1">ISSN: 1234-5678</p>
             </div>
             <div class="button-header">
-                <a class="button-lang" href="#"><img src="./img/language image.png" alt="img-lang">PT,BR<img src="./img/dropdown.png" alt="arrow-down"></a>
+                <a class="button-lang" href="#"><img class="img-world" src="./img/language image.png"
+                        alt="img-lang">PT,BR<img class="img-arrow" src="./img/dropdown.png" alt="arrow-down"></a>
             </div>
             <div class="content-logon">
-                <div>
-                    <p>Bem vindo!</p>
-                    <p>alguem12@galoascience.com</p>
+                <div class="box-textEmail">
+                    <p class="text-welcome">Bem vindo!</p>
+                    <p class="email">alguem12@galoascience.com</p>
                 </div>
-                <div>
-                    <img src="./img/image-user.png" alt="photo-user">
-                    <p>2</p>
+                <div class="notification">
+                    <img class="picture-not" src="./img/image-user.png" alt="photo-user">
+                    <div class="icon-not">
+                        <p class="num-not">2</p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </header>
+        </header>
+    </section>
 </body>
+
 </html>
