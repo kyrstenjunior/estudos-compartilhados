@@ -1,0 +1,112 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #18181B;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.container-input{
+    max-width: 480px;
+    margin: 14px 0;
+}
+
+.container-input span{
+    font-size: 2.2rem;
+}
+
+#scroll{
+    -webkit-appearance: none;
+    width: 100%;
+    background-color: #DFDFDF;
+    border-radius: 5px;
+    height: 1.8rem;
+    outline: none;
+    margin-top: 8px;
+}
+
+.button{
+    height: 40px;
+    background-color: #3eb72b;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.container-senha{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.senhaGerada{
+    text-align: center;
+    font-size: 2.8rem;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+.boxSenha{
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    border: 1px solid #313131;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.boxSenha:hover{
+    transform: scale(1.05);
+}
+
+.tooltip{
+    position: relative;
+    top: 2rem;
+    padding: 6px 8px;
+    background-color: #0f0f0f;
+    text-align: center;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide{
+    display: none;
+}
+
+.container-senha:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
