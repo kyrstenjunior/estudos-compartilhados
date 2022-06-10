@@ -13,13 +13,35 @@ function handleClick(event) {
     let square = event.target;
     let position = square.id;
 
-    handleMove(position);
-    updateSquares();
+    if (handleMove(position)) {
+
+        setTimeout(() => {
+            alert(`O Jogo Acabou - O Jogador ${playerTime} venceu!`);
+        }, 15);
+    };
+
+    updateSquare(position);
 
 }
 
-function updateSquares() {
+function updateSquare(position) {
+    let square = document.getElementById(position.toString());
+    let symbol = board[position];
+    square.innerHTML = `<div class='${symbol}'></div>`
+}
 
+function resetarGame(){
+    board.forEach((element,index) => {
+        board[index] = '';
+    });
+    playerTime = 0;
+    gameOver = false;
+    board.forEach((element, index) => {
+        updateSquares(index);
+    })
+}
+
+function updateSquares() {
     let squares = document.querySelectorAll(".square");
 
     squares.forEach((square) => {
@@ -30,5 +52,4 @@ function updateSquares() {
             square.innerHTML = `<div class='${symbol}'></div>`
         }
     })
-
 }

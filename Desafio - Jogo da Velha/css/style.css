@@ -43,3 +43,10 @@ h1 {
     right: 0;
     left: 0;
 }
+
+.reset{
+    margin-top: 20px;
+    width: 314px;
+    height: 100px;
+    font-size: 20px;
+}
