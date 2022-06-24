@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section>
+
+        <div id="ano">
+            <span>Ano de Nascimento:</span>
+            <input type="number" name="idade" id="idade" placeholder="Ex.: 1995">
+        </div>
+
+        <div id="sexo">
+            <span>Sexo:</span>
+            <input type="radio" name="Masculino" value="masculino" id="masc">
+            <label for="masc">Masculino</label>
+            <input type="radio" name="Feminino" value="feminino" id="fem">
+            <label for="fem">Feminino</label>
+        </div>
+
+        <div>
+            <input type="button" value="Verificar" id="btn" onclick="verificar()">
+        </div>
+
+        <div id="resultado">
+            <p>Preencha os dados acima para ver o resultado!</p>
+        </div>
+
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; Kyrsten Júnior</p>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
