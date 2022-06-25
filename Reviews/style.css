@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    max-width: 1920px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+h1{
+    color: #102B42;
+}
+
+#sublinhado{
+    background-color: #49A6EA;
+    width: 100px;
+    height: 5px;
+    margin-top: 5px;
+}
+
+/*-----------Inicio Revisão------------*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80vw;
+    height: 70vh;
+    margin-top: 35px;
+    padding: 5px 5px;
+    box-shadow: 2px 2px 4px #000000ad;
+    border-radius: 10px;
+}
+
+#susan{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 350px;
+}
+
+#peter{
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 350px;
+}
+
+#anna{
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 350px;
+}
+
+#bill{
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 350px;
+}
+
+.imagens-topo{
+    position: relative;
+    width: 140px;
+}
+
+.img-foto{
+    width: 140px;
+}
+
+.bg-azul{
+    position: absolute;
+    left: 2px;
+    bottom: 4px;
+    width: 145px;
+    z-index: -1;
+}
+
+.aspas{
+    width: 35px;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+}
+
+h2{
+    color: #102B42;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+
+.profissao{
+    color: #49A6EA;
+    margin-top: 6px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.descricao{
+    color: #617E98;
+    text-align: center;
+    margin: 0px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn-nextPrevious{
+    margin-bottom: 10px;
+}
+
+.img-anterior{
+    width: 16px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.img-proximo{
+    width: 16px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.surp{
+    color: #49A6EA;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: none;
+    padding: 6px;
+    border: solid 2px #49A6EA;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.surp:hover{
+    color: #102B42;
+    border-color: #102B42;
+    background-color: #2E6A96;
+}
+
+/*-----------Fim Revisão------------*/
+
+@media screen and (min-width: 825px){
+    .container{
+        width: 800px;
+    }
+}
