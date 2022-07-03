@@ -19,8 +19,7 @@ function handleMove(position) {
 
         if (gameOver == false) {
 
-            playerTime = (playerTime == 0) ? 1 : 0; //Se player time for igual a zero, então colocar 1 na variáve, senão, colocar o 0.
-
+            playerTime = (playerTime == 0) ? 1 : 0; //Se player time for igual a zero, então colocar 1 na variável, senão, colocar o 0.
 
         }
     }

@@ -30,17 +30,6 @@ function updateSquare(position) {
     square.innerHTML = `<div class='${symbol}'></div>`
 }
 
-function resetarGame(){
-    board.forEach((element,index) => {
-        board[index] = '';
-    });
-    playerTime = 0;
-    gameOver = false;
-    board.forEach((element, index) => {
-        updateSquares(index);
-    })
-}
-
 function updateSquares() {
     let squares = document.querySelectorAll(".square");
 
